@@ -1,34 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Notre Dame Mobile Header Test</title>
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700');
-  @font-face {font-family:GPC; font-weight:500; font-style:normal;
-  src:url('https://static.nd.edu/fonts/gp-min/gpc-bold.woff2') format('woff2'), /* Super Modern Browsers */
-      url('https://static.nd.edu/fonts/gp-min/gpc-bold.woff') format('woff'), /* Pretty Modern Browsers */
-      url('https://static.nd.edu/fonts/gp-min/gpc-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
-  }
-  html, body { padding:0; margin:0; font-size:16px; font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;  line-height:1.5em; color:#333; }
-  .hide { display:none; }
-  .no-bullets  { margin:0; padding:0; }
-    .no-bullets li { list-style:none; display:inline-block; }
-    .wrapper { max-width:100%; overflow:hidden; }
-  .container { padding:0 1em; }
-  .site-header { background:#0c2340; border-top:4px solid #ae9142; color:#fff; border-bottom:5px solid #081629; }
-  .brandbar { font-family:'Garamond', 'Adobe Garamond Pro', Times, serif; text-transform:uppercase; letter-spacing:2px; padding:0.75em 0 0; }
-  .brandbar.dark { background:#081629; margin:0 -1em; padding:0.75em 1em; }
-  .brandbar.marked::before { content:''; display:inline-block; width: 0; height: 0; border-left:0.75em solid transparent; border-right:0.75em solid transparent; border-top:1.25em solid #ae9142; margin-right:0.5em; vertical-align:text-top; }
-  .mark { display:none; max-width:10em; }
-  .parent { text-transform:uppercase; font-size:0.875em; font-weight:300; color:#d2d2d2; margin-bottom:0.25rem; }
-  .site-title { font-size:2rem; line-height:1.2em; font-family:GPC, Arial Narrow, 'Helvetica Neue', Helvetica, sans-serif; }
-  .page-title { font-family:GPC, Arial Narrow, 'Helvetica Neue', Helvetica, sans-serif; color:#0c2340; font-size:2rem; line-height:1.2em; }
-    .page-title::after { content: ''; display: block; width: 50px; height: 4px; margin: 0.75rem 0 1.875rem 0; background:#ae9142; }
-  .identity { padding:1.25em 0; }
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700');
+    @font-face {font-family:GPC; font-weight:500; font-style:normal;
+    src:url('https://static.nd.edu/fonts/gp-min/gpc-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://static.nd.edu/fonts/gp-min/gpc-bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://static.nd.edu/fonts/gp-min/gpc-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    }
+    html, body { padding:0; margin:0; font-size:16px; font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;  line-height:1.5em; color:#333; }
+    .hide { display:none; }
+    .no-bullets  { margin:0; padding:0; }
+      .no-bullets li { list-style:none; display:inline-block; }
+      .wrapper { max-width:100%; overflow:hidden; }
+    .container { padding:0 1em; }
+    .site-header { background:#0c2340; border-top:4px solid #ae9142; color:#fff; border-bottom:5px solid #081629; }
+    .brandbar { font-family:'Garamond', 'Adobe Garamond Pro', Times, serif; text-transform:uppercase; letter-spacing:2px; padding:0.75em 0 0; }
+    .brandbar.dark { background:#081629; margin:0 -1em; padding:0.75em 1em; }
+    .brandbar.marked::before { content:''; display:inline-block; width: 0; height: 0; border-left:0.75em solid transparent; border-right:0.75em solid transparent; border-top:1.25em solid #ae9142; margin-right:0.5em; vertical-align:text-top; }
+    .mark { display:none; max-width:10em; }
+    .parent { text-transform:uppercase; font-size:0.875em; font-weight:300; color:#d2d2d2; margin-bottom:0.25rem; }
+    .site-title { font-size:2rem; line-height:1.2em; font-family:GPC, Arial Narrow, 'Helvetica Neue', Helvetica, sans-serif; }
+    .page-title { font-family:GPC, Arial Narrow, 'Helvetica Neue', Helvetica, sans-serif; color:#0c2340; font-size:2rem; line-height:1.2em; }
+      .page-title::after { content: ''; display: block; width: 50px; height: 4px; margin: 0.75rem 0 1.875rem 0; background:#ae9142; }
+    .identity { padding:1.25em 0; }
 
-  .navbar-mobile { backgronud:#fff; border-bottom:1px solid #ccc; }
-    .navbar-mobile ul { display: flex; align-items: end; margin: 0; padding: 1rem 0; opacity: 1; visibility: visible; }
-    .navbar-mobile li { margin: 0; width:25%; text-align: center; font-size: 0.75rem; }
-    .navbar-mobile .btn-search, .navbar-mobile a { color:#0c2340; display: block; height: 2.5rem; max-width:100%; padding: 0; line-height: 1.8em; text-decoration: none; text-transform: uppercase; }
-</style>
+    .navbar-mobile { backgronud:#fff; border-bottom:1px solid #ccc; }
+      .navbar-mobile ul { display: flex; align-items: end; margin: 0; padding: 1rem 0; opacity: 1; visibility: visible; }
+      .navbar-mobile li { margin: 0; width:25%; text-align: center; font-size: 0.75rem; }
+      .navbar-mobile .btn-search, .navbar-mobile a { color:#0c2340; display: block; height: 2.5rem; max-width:100%; padding: 0; line-height: 1.8em; text-decoration: none; text-transform: uppercase; }
+  </style>
 </head>
 <body>
   <div class="wrapper">
